@@ -40,8 +40,8 @@ def search_for_plugin_downloads(
             ):
             continue
         searched.add(developer)
-        url = 'https://www.google.com.tr/search?q={}'.format(
-                f'{developer} {plugin} {format} download'
+        url = 'https://duckduckgo.com/?q={}'.format(
+                f'!g {developer} {plugin} {format} download'
             )
         webbrowser.open(url)
 
